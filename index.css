@@ -2,6 +2,7 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none; color: black;}
+html{scroll-behavior: smooth;}
 
 .body{
     font-family: "Noto Sans KR", serif;
@@ -129,6 +130,11 @@ a{text-decoration: none; color: black;}
     background-repeat: no-repeat;
     background-size: 10%;
     cursor: pointer;
+}
+#section .main .main_right .tel>a{
+    width: 30%;
+    height: 30vw;
+    display: block;
 }
 #section .about{
     width: 100%;
@@ -795,6 +801,39 @@ a{text-decoration: none; color: black;}
     background-size: 12.5%;
     background-position-x:13.5%;
     background-image: url(images/email.png);
+}
+#section .top{
+    position: absolute;
+    bottom: 5%; left: 1%;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #4b56bc;
+    z-index: 50;
+    background-image: url(images/up.png);
+    background-size: 66%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    animation: jump 2s infinite;
+}
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 0.9;
+    }
+}
+#section .top>a{
+    width: 2vw;
+    height: 2vw;
+    display: block;
 }
 #footer{
     width: 100%;
